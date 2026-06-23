@@ -51,6 +51,30 @@ image mineral_dump = "images/Char/Isa_Normal.png" #//추후 변경 필요
 # 인스타그램 이미지 예시 (실제 구현 시 여러 이미지 필요)
 image is_insta_1 = "image/Char/Isa_Normal.png" #//추후 변경 필요
 
+
+################################################################################
+# 포지션 정의
+################################################################################
+
+transform left:
+    zoom 0.8
+    xpos 0.2
+    xanchor 0.5
+    yalign 1.0
+
+transform center:
+    zoom 0.8
+    xpos 0.5
+    xanchor 0.5
+    yalign 1.0
+
+
+transform right:
+    zoom 0.8
+    xpos 0.8
+    xanchor 0.5
+    yalign 1.0
+
 ################################################################################
 # 게임 시작 (Game Start)
 ################################################################################
@@ -69,7 +93,7 @@ label s1:
     "신재인과 한기준은 노트북을, 디렉터는 정면을 보고 있다."
     "이어, 한기준이 노트북에서 정면으로 시선을 옮긴다."
     show jaein_normal at right
-    show dojin_normal at truecenter
+    show dojin_normal at center
     show kijun_normal at left
     kijun "안녕하세요."
     player "네, 안녕하십니까."
