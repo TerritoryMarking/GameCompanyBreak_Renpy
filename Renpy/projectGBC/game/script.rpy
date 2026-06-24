@@ -2,16 +2,16 @@
 # 캐릭터 정의 (Character Definitions)
 ################################################################################
 
-define player = Character("주인공")
-define kijun = Character("한기준")
-define isa = Character("천이사")
-define eunbi = Character("황은비")
-define hana = Character("백하나")
-define solmi = Character("라솔미")
-define unknown_char = Character("???")
-define daeun = Character("김다은")
-define dojin = Character("박도진")
-define jaein = Character("신재인")
+define player = Character("주인공", who_color="#000000")
+define kijun = Character("한기준", who_color="#262b57")
+define isa = Character("천이사", who_color="#753c15")
+define eunbi = Character("황은비", who_color="#fa5b5b")
+define hana = Character("백하나", who_color="#0c1670")
+define solmi = Character("라솔미", who_color="#ffe13a")
+define unknown_char = Character("???", who_color="#444444")
+define daeun = Character("김다은", who_color="#000000")
+define dojin = Character("박도진", who_color="#000000")
+define jaein = Character("신재인", who_color="#000000")
 
 # 나레이션용 캐릭터
 define narrator = Character(None)
@@ -94,7 +94,7 @@ image is_insta_1 = "image/Char/Isa_Normal.png" #//추후 변경 필요
 
 transform left:
     zoom 0.8
-    xpos 0.2
+    xpos 0.3
     xanchor 0.5
     yalign 1.0
 
@@ -107,7 +107,7 @@ transform center:
 
 transform right:
     zoom 0.8
-    xpos 0.8
+    xpos 0.7
     xanchor 0.5
     yalign 1.0
 
@@ -129,8 +129,8 @@ label s1:
     "N사 면접장. 긴장감이 맴돈다. 총 3명이 앉아있다. 왼쪽부터 실무자 신재인, 디렉터 박도진, 팀장 한기준 순서대로 앉아 있다."
     "신재인과 한기준은 노트북을, 디렉터는 정면을 보고 있다."
     "이어, 한기준이 노트북에서 정면으로 시선을 옮긴다."
-    show jaein normal at right
     show dojin normal at center
+    show jaein normal at right
     show kijun normal at left
     kijun "안녕하세요."
     player "네, 안녕하십니까."
