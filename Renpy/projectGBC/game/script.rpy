@@ -34,6 +34,17 @@ image isa think = "images/Char/Isa_Think.png"
 image isa tired = "images/Char/Isa_Tired.png"
 
 image eunbi normal = "images/Char/Eunbi_Normal.png"
+image eunbi angry = "images/Char/Eunbi_Angry.png"
+image eunbi happy = "images/Char/Eunbi_Happy.png"
+image eunbi lookAway = "images/Char/Eunbi_LookAway.png"
+image eunbi sad = "images/Char/Eunbi_Sad.png"
+image eunbi smug = "images/Char/Eunbi_Smug.png"
+image eunbi sneer = "images/Char/Eunbi_Sneer.png"
+image eunbi surprised = "images/Char/Eunbi_Surprised.png"
+image eunbi talk = "images/Char/Eunbi_Talk.png"
+image eunbi think = "images/Char/Eunbi_Think.png"
+image eunbi tired = "images/Char/Eunbi_Tired.png"
+image eunbi wink = "images/Char/Eunbi_Wink.png"
 
 image hana normal = "images/Char/Hana_Normal.png"
 

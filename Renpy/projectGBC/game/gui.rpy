@@ -59,13 +59,13 @@ define gui.interface_text_color = '#404040'
 ## 글자와 글자 크기 ###################################################################
 
 ## 인-게임 글자에 사용됩니다.
-define gui.text_font = "SourceHanSansLite.ttf"
+define gui.text_font = "gui/fonts/Pretendard-SemiBold.otf"
 
 ## 캐릭터의 이름에 사용됩니다.
-define gui.name_text_font = "SourceHanSansLite.ttf"
+define gui.name_text_font = "gui/fonts/Pretendard-Bold.otf"
 
 ## 인터페이스에 사용됩니다.
-define gui.interface_text_font = "SourceHanSansLite.ttf"
+define gui.interface_text_font = "gui/fonts/Pretendard-Medium.otf"
 
 ## 일반 대사의 글자 크기입니다.
 define gui.text_size = 33
@@ -107,8 +107,8 @@ define gui.textbox_yalign = 1.0
 
 ## 말하는 캐릭터의 이름을 텍스트 박스를 기준으로 배치합니다. 이것은 좌측이나 최
 ## 상단으로부터 전체 픽셀값의 숫자가 되거나, 0.5로 중앙이 될 수 있습니다.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 400
+define gui.name_ypos = 60
 
 ## 캐릭터들의 이름을 수평으로 정렬합니다. 이것은 0.0으로 좌측 정렬, 0.5로 중앙,
 ## 그리고 1.0으로 우측 정렬될 수 있습니다.
@@ -130,7 +130,7 @@ define gui.namebox_tile = False
 
 ## 텍스트박스에서 대사의 위치입니다. These can be a whole number of pixels
 ## relative to the left or top side of the textbox, or 0.5 to center.
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 610
 define gui.dialogue_ypos = 75
 
 ## 픽셀값에서 대사의 최대 너비입니다.
@@ -436,10 +436,10 @@ init python:
         gui.label_text_size = 51
 
         ## 텍스트박스의 위치를 조정합니다.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
+        gui.textbox_height = 380
+        gui.name_xpos = 0
+        gui.dialogue_xpos = 0
+        gui.dialogue_width = 800
 
         ## 다양한 사물의 크기와 간격을 변경합니다.
         gui.slider_size = 54
@@ -463,7 +463,7 @@ init python:
         gui.nvl_height = 255
 
         gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
+        gui.nvl_name_xpos = 0
 
         gui.nvl_text_width = 1373
         gui.nvl_text_xpos = 518
