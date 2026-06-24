@@ -47,6 +47,18 @@ image eunbi tired = "images/Char/Eunbi_Tired.png"
 image eunbi wink = "images/Char/Eunbi_Wink.png"
 
 image hana normal = "images/Char/Hana_Normal.png"
+image hana angry = "images/Char/Hana_Angry.png"
+image hana happy = "images/Char/Hana_Happy.png"
+image hana lookAway = "images/Char/Hana_LookAway.png"
+image hana sad = "images/Char/Hana_Sad.png"
+image hana smug = "images/Char/Hana_Smug.png"
+image hana sneer = "images/Char/Hana_Sneer.png"
+image hana surprised = "images/Char/Hana_Surprised.png"
+image hana talk = "images/Char/Hana_Talk.png"
+image hana think = "images/Char/Hana_Think.png"
+image hana tired = "images/Char/Hana_Tired.png"
+image hana wink = "images/Char/Hana_Wink.png"
+image hana embarrassed = "images/Char/Hana_Embarrassed.png"
 
 image solmi normal = "images/Char/Solmi_Normal.png"
 image solmi angry = "images/Char/Solmi_Angry.png"
@@ -565,7 +577,7 @@ label s5:
     show eunbi surprised at right
     unknown_char "아…안!녕하세요…"
     player "…"
-    show eunbi sad at right
+    show eunbi lookAway at right
     unknown_char "…"
     "대화가 끝났다."
     unknown_char "……."
@@ -609,6 +621,7 @@ label s5:
     "그런데 그 말을 들은 사람의 반응이… 예상을 한참 빗나갔다."
     show eunbi surprised at right
     unknown_char "히익…!"
+    show eunbi talk at right
     unknown_char "아, 그, 저, 그러니까…!"
     unknown_char "이, 이거는…!"
     "내 앞에 여성분은 말까지 절하며 당황해했다."
@@ -648,7 +661,7 @@ label s5:
     player "그냥, 좋아하는 작가라서…"
     show eunbi talk at right
     unknown_char "아, 아, 아니에요! 그게 아니라…"
-    unknown_char "으아아… 감사합니다…{size=-10}(작은 글씨){/size}"
+    unknown_char "{size=-10}으아아… 감사합니다…{/size}"
     "뭐지?"
     "내가 잘못한 건가…?"
     "순식간에 큰 잘못을 저지른 쓰레기가 된 것 같은 기분에 식은땀이 흐르려던 찰나,"
@@ -671,10 +684,13 @@ label s5:
     show isa smug at left
     isa "참고로 이 친구도 너 못지않게 인외 좋아해."
     isa "팀원 잘 데려왔지?"
+    show eunbi surprised at right
     eunbi "힉…!"
+    show eunbi angry at right
     eunbi "그, 그런 식으로 말하면…!"
     "황은비라는 분은 얼굴이 터질 듯 달아오르더니,"
     "갑자기 자리에서 벌떡 일어났다."
+    show eunbi sad at right
     eunbi "저, 저 먼저 가볼게요!"
     eunbi "죄송합니다!"
 
@@ -803,7 +819,7 @@ label s6:
     player "그러면, ‘유저에게 왜 탐정을 맡기는 지’만 설득시키면 되네."
     player "음… 어떻게 하면 유저가 추리를 하게 되지?"
     "잠시 침묵. 어려운 질문에 다들 고민하고 있다."
-    show eunbi talk at right
+    show eunbi think at right
     eunbi "부끄러워서…"
     "먼저 입을 뗀 건 은비님이었다."
     show isa talk at left
@@ -841,7 +857,7 @@ label s6:
     player "… 그래."
     show isa smug at left
     isa "TRPG 시스템이 있으면, 왠지 미국 너드 개발자가 3년 동안 혼자 개발해서 출시한 게임 같기도 하고."
-    show eunbi sad at right
+    show eunbi think at right
     eunbi "…."
     player "흠… 한 번 룰북이라도 읽어보고 싶은데, 나무위키에 치면 나오려나?"
     show eunbi surprised at right
@@ -887,7 +903,7 @@ label s7:
     "확실히 혼자서 룰 북을 볼 때보다는 훨씬 더 빠르게 이해할 수 있었다."
     
     scene bg university_club_room # Or some other TRPG background
-    show eunbi normal at right
+    show eunbi think at right
     
     eunbi "로즈 아가씨, 혹시 지난 새벽 3시쯤에 어떤 일을 하셨는지요?"
     "이렇게 물어보면, 룰 북에 따라서 가능한 답변을 하면 되는 구나…"
@@ -905,7 +921,7 @@ label s7:
     show eunbi think at right
     eunbi "아까 주사위 때문에 못 봤던 그 단서 뭐였어요?"
 
-    show eunbi sad at right
+    show eunbi lookAway at right
     eunbi "… 그건 그렇고…"
     player "어? … 뭐 또 추가할 게 있어요?"
     show eunbi talk at right
@@ -937,6 +953,7 @@ label s8:
     hide unity_tilemap
 
     player "확인했어, 누나. 은비야, 지형 바닥 타일 리소스는 언제까지 돼?"
+    show eunbi think at right
     eunbi "방금 다 만들긴 했는데요… 잘 어울리는 지 모르겠어서요."
     player "그럼 일단 푸시해줘봐. 넣어보고 안 예쁘면 그때 고치자."
     eunbi "네, 그러면 일단 작업하던 거 바로 깃에 올릴게요."
